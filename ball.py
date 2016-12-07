@@ -35,7 +35,9 @@ def color_ball(color_1,color_2,color_3,take_num):
         else:
             raise  ValueError('第四个参数应该为整数')
     else:
-        raise TypeError('前三个参数应该为元组或者是列表')
-
-count=color_ball(('红',4),('黑',4),('绿',4),3)
-print  count
+        raise TypeError('前三个参数应该为元组或者是列表'）
+                        
+                        #当以脚本方式运行时调用
+if__name__=='__main__':      
+    count=color_ball(('红',4),('黑',4),('绿',4),3)
+    print  count
